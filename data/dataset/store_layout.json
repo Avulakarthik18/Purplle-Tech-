@@ -1,0 +1,22 @@
+{
+  "zones": {
+    "entry": {
+      "name": "Entrance",
+      "coordinates": [[0, 0], [100, 0], [100, 100], [0, 100]]
+    },
+    "checkout": {
+      "name": "Checkout Counters",
+      "coordinates": [[200, 200], [300, 200], [300, 300], [200, 300]]
+    },
+    "aisle_1": {
+      "name": "Produce",
+      "coordinates": [[400, 400], [500, 400], [500, 500], [400, 500]]
+    }
+  },
+  "cameras": {
+    "cam_01": {
+      "location": "entrance",
+      "resolution": "1080p"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "4b4a4e70-3152-470b-b05d-2846616d86ee",
+    "visitor_id": "VIS_1",
+    "event_type": "ENTRY",
+    "zone_id": "FLOOR",
+    "timestamp": "2026-04-19T12:54:09.970114+00:00",
+    "dwell_ms": 0,
+    "confidence": 0.9,
+    "metadata": {
+      "is_staff": false
+    }
+  },
+  {
+    "event_id": "d56ad64a-6715-413e-81aa-f085cc2f6fdd",
+    "visitor_id": "VIS_2",
+    "event_type": "ENTRY",
+    "zone_id": "FLOOR",
+    "timestamp": "2026-04-19T12:54:09.970114+00:00",
+    "dwell_ms": 0,
+    "confidence": 0.9,
+    "metadata": {
+      "is_staff": false
+    }
+  },
+  {
+    "event_id": "bf6a2d13-f475-4b9d-95a4-ba63c35958ce",
+    "visitor_id": "VIS_1",
+    "event_type": "EXIT",
+    "zone_id": "FLOOR",
+    "timestamp": "2026-04-19T12:54:20.743685+00:00",
+    "dwell_ms": 0,
+    "confidence": 0.9,
+    "metadata": {
+      "is_staff": false
+    }
+  },
+  {
+    "event_id": "1b49c03a-0bf9-42cc-8c08-c5175191f3ed",
+    "visitor_id": "VIS_2",
+    "event_type": "EXIT",
+    "zone_id": "FLOOR",
+    "timestamp": "2026-04-19T12:54:20.743685+00:00",
+    "dwell_ms": 0,
+    "confidence": 0.9,
+    "metadata": {
+      "is_staff": false
+    }
+  }
+]

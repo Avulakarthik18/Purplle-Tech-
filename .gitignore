@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+store.db
+yolov8n.pt
+data/dataset/videos/
+.env
+
