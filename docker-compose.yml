@@ -5,9 +5,36 @@ services:
     build: .
     container_name: store-intelligence-api
     ports:
-      - "8000:8000"
+      - "9001:8000"
     volumes:
       - .:/app
     environment:
       - PYTHONUNBUFFERED=1
     restart: always
+
+  dashboard:
+    build: .
+    container_name: store-intelligence-dashboard
+    command: streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "9002:8501"
+    volumes:
+      - .:/app
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    restart: always
+
+  processor:
+    build: .
+    container_name: store-intelligence-processor
+    command: python pipeline/track.py
+    volumes:
+      - .:/app
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    restart: "no" # Runs once to process available clips
+
